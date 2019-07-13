@@ -1,0 +1,72 @@
+body {
+	background: #1A1B1F;
+	margin: 0;
+	padding: 0;
+}
+
+.carousel {
+	background: #1D1E22;
+	position: relative;
+	text-align: center;
+	overflow-y: hidden;
+	height: 400px;
+}
+
+.arrows {
+	position: relative;
+	z-index: 999;
+}
+
+.arrow {
+	position: absolute;
+	bottom: -56px;
+	font-size: 100px;
+	color: white;
+	cursor: pointer;
+}
+
+#rightArrow {
+	right: 0;
+}
+
+#leftArrow {
+	left: 0;
+}
+
+.slides {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.slide {
+	display: none;
+	opacity: 0;
+	/*transition: opacity 0.5s;*/
+}
+
+.slide.active {
+	display: inline;
+	opacity: 1;
+}
+
+.indicators {
+	position: absolute;
+	text-align: center;
+	font-size: 30px;
+	opacity: 0.5;
+	height: 45px;
+	bottom: 0px;
+	width: 100%;
+
+}
+
+.indicators p {
+	display: inline;
+	margin: 160px;
+	opacity: 0.15;
+}
+
+.indicators > p.active {
+	opacity: 1;
+}
